@@ -1,2 +1,2 @@
 # icici_page
-icici_page
+This Project Replicate the landing page of the ICICI bank.
