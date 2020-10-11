@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  height: 80px;
+  width: 100%;
+}
+.logo_div {
+  height: 80px;
+  margin: 0 10% 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo_div div a {
+  font-family: serif;
+  opacity: 0.5;
+  color: gray;
+}
+.logo_div div :hover {
+  color: red;
+}
+.logo_div div a::after {
+  content: " | ";
+}
+#about-us {
+  text-decoration: none;
+}
+.nav_bar {
+  width: 100%;
+  background-color: #7c251d;
+}
+
+.dropdown {
+  margin: 0 10% 0 10%;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.dropdown-toggle {
+  appearance: none;
+  background-color: #7c251d;
+  color: white;
+  border: 0;
+  padding: 12px 35px 12px 12px;
+  max-width: 200px;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+}
+.dropdown-toggle:hover {
+  color: gray;
+}
+.dropdown-toggle::after {
+  content: "";
+  border-width: 6px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: inherit;
+  position: absolute;
+  right: 12px;
+  top: calc(35% + 3px);
+  transform: translate(-30%);
+}
+
+.main_page {
+  margin: 10px 100px 0 100px;
+  height: 100%;
+  display: grid;
+
+  grid-template-columns: 20% 78%;
+  grid-column-gap: 20px;
+}
+
+.payments {
+  display: flex;
+  justify-content: space-between;
+
+  width: 290px;
+}
+.arrow {
+  position: relative;
+}
+.arrow::after {
+  content: "";
+  border-width: 6px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-left-color: inherit;
+  position: absolute;
+  right: -8px;
+  top: calc(0% + 3px);
+  transform: translate(-30%);
+  color: gray;
+}
+.search-bar {
+  margin-top: 10px;
+  width: 100%;
+  height: 85px;
+  background-color: #f6f7f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_items {
+  display: flex;
+  margin: 0 3% 0 2%;
+  align-items: center;
+  flex-grow: 1;
+  height: 35px;
+
+  background-color: white;
+}
+
+#search_items {
+  width: 100%;
+  margin-left: 10px;
+  border: 0px;
+  margin-bottom: 10px;
+}
+.input_feild {
+  margin-left: 5px;
+  flex-grow: 1;
+  border: 0px;
+  position: relative;
+}
+.input_feild:focus {
+  outline: none;
+}
+.search_icon {
+  margin-left: 5px;
+}
+/* #billers_names {
+  width: 10px;
+  border: 1px solid red;
+} */
+/* .chevron-down {
+  margin-right: 7px;
+  opacity: 0.6;
+} */
+
+/*pay new bilss*/
+.pay_new_bills {
+  display: flex;
+  margin-top: 10px;
+  background-color: #f6f7f8;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+
+.pay_new_bills p {
+  width: 100%;
+  margin-left: 15px;
+}
+.cards {
+  display: flex;
+  border: 1px solid #f6f7f8;
+  height: 108px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards section:hover {
+  transform: scale(1.1);
+  background-color: #7f0a0a;
+  color: white;
+  border-radius: 3px;
+}
+
+.cards section:hover #icon_inside {
+  transform: scale(0.7);
+  background-color: white;
+  color: black;
+}
+.cards section :hover p {
+  font-size: 6px;
+}
+
+.cards section div {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff1f3;
+  border-radius: 3px;
+}
+.cards section p {
+  font-size: 12px;
+  padding: 4px;
+}
+.cards section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.recently_paid {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 40px;
+  background-color: #f6f7f8;
+}
+.recently_paid p {
+  width: 100%;
+  margin-left: 15px;
+}
+.recently_paid_box div {
+  display: flex;
+  align-items: center;
+  height: 71px;
+  border: 1px solid #f6f7f8;
+  justify-content: space-between;
+}
+.recently_paid_box div p img {
+  margin-right: 10px;
+  margin-left: 25px;
+}
+.recently_paid_box div p {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.recently_paid_box div button {
+  color: maroon;
+  width: 90px;
+  height: 28px;
+  border: 1px solid #80261f;
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 10px;
+}
+.recently_paid_box div button:hover {
+  color: white;
+  background-image: linear-gradient(to bottom, #912e24, #7c251d);
+}
+.enter_biller_details {
+  display: flex;
+  margin-top: 10px;
+  background-color: #f6f7f8;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+
+.enter_biller_details p {
+  width: 100%;
+  margin-left: 15px;
+}
+.enter_biller_details_cotent {
+  height: 150px;
+  background-color: #f1f5fa;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  padding: 20px;
+}
+select {
+  height: 30px;
+  margin-top: 10px;
+  border: solid 1px #d4dbe1;
+  width: 270px;
+}
+#bname,
+#mnumber,
+#nname {
+  height: 30px;
+  margin-top: 10px;
+  border: solid 1px #d4dbe1;
+  width: 270px;
+}
+.enter_transaction_details {
+  display: flex;
+  background-color: #f6f7f8;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+
+.enter_transaction_details p {
+  width: 100%;
+  margin-left: 15px;
+}
+.enter_transaction_details_content {
+  height: 150px;
+  background-color: #f1f5fa;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+.enter_transaction_details_content_select {
+  height: 30px;
+  /* margin-top: 10px;
+  border: solid 1px #d4dbe1;
+  width: 270px; */
+}
+#transfer,
+#amount,
+#remarks {
+  height: 30px;
+  margin-top: 10px;
+  border: solid 1px #d4dbe1;
+  width: 270px;
+}
+
+.submit {
+  background-color: #f2f2f2;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.submit button {
+  margin: 0 20px 0 20px;
+  padding: 8px 20px 9px 20px;
+  border: 1px solid #80261f;
+  color: #80261f;
+}
+.payment:hover {
+  color: white;
+  background-image: linear-gradient(to bottom, #912e24, #7c251d);
+  border: 0;
+  border-radius: 3px;
+}
+
+/*LEFT COLUMN*/
+.welcome_back {
+  margin: 2%;
+}
+.welcome_back span {
+  font-weight: bold;
+}
+.welcome_back p {
+  padding: 3px;
+}
+.user_photo {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: auto auto;
+  grid-row-gap: 6px;
+}
+.user_photo i {
+  color: gray;
+  grid-row: 1 / 3;
+  margin-left: 5px;
+}
+.user_photo button {
+  background-image: linear-gradient(to bottom, #912e24, #7c251d);
+  color: white;
+  border: 0;
+  margin: 6px 6px 6px 0;
+}
+.last_visited {
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.last_visited button {
+  margin-right: 6px;
+  padding: 3px;
+  background-color: darkgray;
+  border: 0;
+}
+.fund_transfer {
+  display: flex;
+  margin-top: 20px;
+  background-image: linear-gradient(to bottom, #912e24, #7c251d);
+  color: white;
+}
+.fund_transfer span {
+  margin-left: 5px;
+  padding: 3px;
+}
+.minus {
+  margin-left: 30%;
+  align-self: center;
+}
+.share {
+  margin: 3px 3px 3px 6px;
+}
+.fund_transfer_content ul {
+  border: 2px solid #f6f7f8;
+  list-style-type: none;
+  padding: 10px;
+}
+.fund_transfer_content ul li {
+  padding: 5px;
+}
+.payments_methods ul li {
+  list-style-type: none;
+  display: flex;
+  height: 25px;
+  color: black;
+  position: relative;
+  font-weight: bold;
+  /* background-color: rgb(231, 228, 228); */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(206, 202, 202),
+    10%,
+    rgb(247, 243, 243)
+  );
+}
+.payments_methods ul {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.payments_methods ul li i {
+  padding: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.payments_methods ul li .plus {
+  color: gray;
+  position: absolute;
+  right: 1px;
+}
+.payments_methods ul li {
+  padding: 5px;
+}
+.payments_methods ul li:last-child {
+  padding-left: 40px;
+}
+.payments_methods ul li:last-child {
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+.payments_methods ul li:hover {
+  cursor: pointer;
+}
+.my_shortcuts {
+  display: flex;
+  margin-top: 20px;
+  background-color: lightgray;
+  color: black;
+}
+.my_shortcuts span {
+  margin-left: 5px;
+  padding: 3px;
+}
+.my_shortcurs_content ul {
+  list-style-type: none;
+  padding: 10px;
+}
+.my_shortcurs_content ul li {
+  padding: 5px;
+}
+.my_shortcurs_content {
+  border: 2px solid #f6f7f8;
+}
+.customize_link {
+  background-image: linear-gradient(to bottom, #912e24, #7c251d);
+  color: white;
+  border: none;
+  padding: 5px;
+  margin: 10px 10px 10px 15px;
+}
+.icici_debit {
+  padding: 2px;
+  margin-top: 10px;
+  border: 2px solid #f6f7f8;
+}
+.debit_img {
+  width: 100%;
+  height: 170px;
+}
+/* footer */
+footer {
+  margin-top: 5px;
+  background-color: #f6f7f8;
+}
+footer section div a {
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+}
+#safe_banking::after {
+  content: " | ";
+}
+.middle a::after {
+  content: " | ";
+}
+.right a::after {
+  content: " | ";
+}
+.bottom a::after {
+  content: " | ";
+}
+.top {
+  padding-top: 5px;
+  margin: 2% 10% 0 10%;
+
+  display: grid;
+  height: 100%;
+  grid-template-columns: 25% 25% 40%;
+  grid-column-gap: 40px;
+}
+.right {
+  width: 100%;
+}
+.bottom {
+  margin: 2% 10% 0 10%;
+}
+.bottom a {
+  text-decoration: none;
+  font-size: 13px;
+  color: gray;
+}
+#search_items,
+#mnumber,
+#nname,
+#enter_biller_details_cotent_select,
+#remarks,
+#enter_transaction_details_content_select,
+#amount:focus {
+  outline: none;
+}
+
+@media all and (max-width: 768px) {
+  .left {
+    display: none;
+  }
+
+  #menu {
+    background-color: white;
+    width: 35px;
+    height: 30px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: maroon;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(4px);
+  }
+  .change .bar {
+    background-color: black;
+  }
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  .change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+  }
+  .change #bar2 {
+    opacity: 0;
+  }
+  .change {
+    display: block;
+  }
+
+  .main_page {
+    margin: 10px 0px 0 0px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .logo_div p {
+    display: none;
+  }
+  .logo_div {
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .cards {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 15px;
+  }
+  .recently_paid_box div p img {
+    margin-left: 10px;
+  }
+
+  .submit {
+    background-color: #f2f2f2;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .submit button {
+    margin: 5px 7px 0 7px;
+    padding: 3px;
+    font-size: 10px;
+    border: 1px solid #80261f;
+  }
+  footer {
+    margin-top: 10px;
+    background-color: #f6f7f8;
+  }
+  .footer_left {
+    display: none;
+  }
+  .top {
+    width: 100%;
+    margin: 5px 5px;
+    display: block;
+    height: 100%;
+  }
+  .right {
+    padding-top: 10px;
+  }
+  .bottom {
+    margin: 0px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .minus {
+    margin-left: 10%;
+    align-self: center;
+  }
+  .icici_debit {
+    display: none;
+  }
+}
+@media all and (max-width: 425px) {
+  .main_page {
+    height: 100%;
+    width: 100%;
+  }
+  #about-us {
+    font-size: 10px;
+    display: block;
+  }
+  .dropdown {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .recently_paid_box div button {
+    color: maroon;
+    width: 60px;
+  }
+  .recently_paid_box div p {
+    font-size: 15px;
+  }
+  .enter_biller_details_cotent {
+    height: 200px;
+    background-color: #f1f5fa;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+  }
+  .enter_transaction_details_content {
+    height: 100%;
+    background-color: #f1f5fa;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+}
+@media all and (max-width: 375px) {
+  .recently_paid_box div p {
+    font-size: 12px;
+  }
+  .recently_paid_box div button {
+    color: maroon;
+    width: 50px;
+  }
+}

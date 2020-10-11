@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>ICICI-PAGE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="logo">
+        <div class="logo_div">
+            <img class="img_1" src="assets/images/icici_img_1.png"  width="200px"/>
+            <div>
+                <a href="#" id="about-us">About us</a> 
+                <a href="#" id="about-us">Customer Care</a>
+                <a href="#" id="about-us">Find ATM/Branch</a>
+            </div>
+        </div>  
+    </section>
+ 
+    <section class="nav_bar">
+        <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Overview</button>
+            <button class="dropdown-toggle" type="button">My Account</button>
+            <button class="dropdown-toggle" type="button"> Paments & transfer</button>
+            <button class="dropdown-toggle" type="button">Investment & Insurance</button>
+            <button class="dropdown-toggle" type="button">Exclusive Offering</button>
+            <button class="dropdown-toggle" type="button">Customer Care</button>
+        </div>
+    </section>
+<section class="main_page">
+    <section class="hamburger">
+        <div id="menu_bar">
+            <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+            </div>
+            
+        
+        <div class="left" id="left">
+            <div class="welcome_back">
+                <i class="fa fa-lock fa-lg" ></i>
+                <span> WELCOME BACK</span>
+                <p>NASHAD ABDU</p>
+            </div>
+            <div class="user_photo">
+                <i class="fa fa-user fa-5x" ></i>
+                <button class="profile" type="button">MY PROFILE</button>
+                <button class="card_pin" type="button" >MY CARD PIN</button>
+            </div>
+            <div class="last_visited">
+                <p>date & time </p>
+                <button class="logout" type="button">LOG OUT</button>
+            </div>
+            <div class="fund_transfer">
+                <i class="fa fa-share share" ></i>
+                <span>Fund Transfer</span>
+                <i class="fa fa-minus minus" ></i>
+            </div>
+            <div class="fund_transfer_content">
+                <ul>
+                    <li>Money to World</li>
+                    <li>Initiate Funds Transfer</li>
+                    <li>Generate/Retrive MMID </li>
+                    <li>Smart Money Order</li>
+                    <li>Manage Payees</li>
+                    <li>To virtual account</li>
+                </ul>
+            </div>
+            <div class="payments_methods">
+                <ul>
+                <li><i class="fa fa-money payment_icon"></i>Bill Payments<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-money payment_icon"></i>Recharge<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-money payment_icon"></i>Qucik Pay<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-envelope-open payment_icon"></i>receive Funds<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-users payment_icon"></i>Manage Payees<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-money payment_icon"></i>Manage Billers<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-money payment_icon"></i>Transaction Status<i class="fa fa-plus plus"></i></li>
+                <li><i class="fa fa-university payment_icon"></i>Tax Center<i class="fa fa-plus plus"></i></li>
+                <li>My Favourite</button></li>
+                </ul>
+            </div>
+            <div class="my_shortcuts">
+                <i class="fa fa-star share" ></i>
+                <span>My Shortcuts</span>
+            </div>
+            <div class="my_shortcurs_content">
+                <ul>
+                    <li>Bank Account e-statement</li>
+                    <li>Credit Card e-statement</li>
+                    <li>Check Book Requested</li>
+                    <li>Open a Fixed Deposite/Recurring Deposite</li>
+                    <li>Closure/Renewal of Existing FD/RD</li>
+                    <li>Generate Debit/Credit Card Pin</li>
+                    <li>Block Debit/ATM card</li>
+                </ul>
+                <button class="customize_link" type="button">CUSTOMIZE LINK</button>
+            </div>
+            <div class="icici_debit">
+                <img  class="debit_img" src="assets/images/icici_debit.jpg" />
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+        
+        <div class="main">
+            <div class="payments">
+                <span class="payment_transfer">PAYMENTS & TRANSFER</span>
+                <P class="arrow"> </P>
+                <span class="bill">Bill Payment</span>
+            </div>
+            <div class="search-bar">
+                <div class="search_items">
+                    <i class="fa fa-search search_icon" ></i>
+                    <input class="input_feild" type="text" placeholder="search for a biller by name or category" list="billers_names" onchange="datalist()">                
+                    <datalist id="billers_names">
+                        <option>Airtel Bangalore</option>
+                        <option >Bharti Infotel</option>
+                        <option>BESCOM</option>
+                        <option>BSNL</option>
+                        <option>TATA DOCOMO</option>
+                        <option>Dish TV Recharge</option>
+                    </datalist>
+                
+
+                    <!-- <i class="fa fa-chevron-down chevron-down " ></i> -->
+                    <!-- <select id="search_items">
+                    <option value="">search for a biller by name or category</option>
+                    </select> -->
+                </div>
+            </div>
+            <div class="pay_new_bills">
+                <p>Pay New Bills</p>
+            </div>
+             <div class="cards">
+                
+                    <section class="all_bills">
+                        <div id="icon_inside"><i class="fa fa-credit-card icons "></i></div>
+                        <p class="names">Bills</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-mobile icons fa-lg"></i></div>
+                        <p class="names" id="mobiles">Mobile</p>
+                    </section>
+                    <section class="dth">
+                        <div id="icon_inside"><i class="fa fa-television icons "></i></div>
+                        <p class="names">DTH</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-money icons fa-lg"></i></div>
+                        <p class="names">Mutual</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-lightbulb-o icons "></i></div>
+                        <p class="names">Eletricity</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-internet-explorer icons "></i></div>
+                        <p class="names">Data</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-mobile icons fa-lg"></i></div>
+                        <p class="names">GAS</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-tint icons "></i></div>
+                        <p class="names">Water</p>
+                    </section>
+                    <section class="mobile">
+                        <div id="icon_inside"><i class="fa fa-chevron-down icons "></i></div>
+                        <p class="names">More</p>
+                    </section>
+            </div>
+            <div class="recently_paid">
+                <p>Recently Paid</p>
+            </div>
+            <section class="recently_paid_box">
+                <div>
+                    <p><img src="assets/images/vodafone.png" width="30px" height="30px"/>House Phone<br>+91 98183 07217</p>
+                    <p>Paid on<br>22 Mar</p>
+                    <p>₹1200.00</p>
+                    <button class="button" type="button">Repay</button>
+                </div>
+                <div>
+                    <p><img src="assets/images/jio.png" width="30px" height="30px"/>House Phone<br>+91 9999999999</p>
+                    <p>Paid on<br>15 Mar</p>
+                    <p>₹900.00</p>
+                    <button class="button" type="button">Repay</button>
+                </div>
+                <div>
+                    <p><img src="assets/images/airtel_1.png" width="30px" height="30px"/>House Phone<br>+91 9999999999</p>
+                    <p>Paid on<br>10 Mar</p>
+                    <p>₹640.65</p>
+                    <button class="button" type="button">Repay</button>
+                </div>
+            </section>
+            <div class="enter_biller_details">
+                <p>Enter Biller details</p>
+            </div>
+            <section class="enter_biller_details_cotent">
+
+                <form id="form">
+                    <label for="bname">Biller Name</label><br>
+                    <select id="enter_biller_details_cotent_select">
+                        <option value="">select</option>
+                        <option value="Airtel_Postpaid">Airtel Postpaid</option>
+                        <option value="jio_Postpaid">jio Postpaid</option>
+                        <option value="V!_Postpaid">V! Postpaid</option>
+                    </select>
+                    
+                    <!-- <input type="text" id="bname"  name="bname" placeholder="  Airtel Postpaid"> -->
+                </form>
+                <form id="form">
+                    <label for="mnumber">Mobile Number</label><br>
+                    <input type="text" id="mnumber"  name="mnumber" >
+                </form>
+                <form id="form">
+                    <label for="nname">Nick Name</label><br>
+                    <input type="text" id="nname"  name="nname"  >
+                </form>
+            </section>
+            <div class="enter_transaction_details">
+                <p>Enter Transaction details</p>
+            </div>
+            <section class="enter_transaction_details_content">
+                <form id="form" >
+                    <label for="transfer">Transfer from</label><br>
+                    <select class="enter_transaction_details_content_select"  id="enter_transaction_details_content_select">
+                        <option value="">select</option>
+                        <option value="UPI">UPI</option>
+                        <option value="NEFT">NEFT</option>
+                        <option value="RTES">RTES</option>
+                        <option value="Fund_Transfer_Abroad">Fund Transfer Abroad</option>
+                        
+                    </select>
+                   
+                    <!-- <input type="text" id="transfer"  name="transfer" placeholder="  select"> -->
+                </form>
+                <form id="form">
+                    <label for="amount">Amount</label><br>
+                    <input type="text" id="amount"  name="amount" placeholder="  ₹">
+                </form>
+                <form id="form">
+                    <label for="remarks">Remarks</label><br>
+                    <input type="text" id="remarks"  name="remarks"  >
+                </form>
+
+            </section>
+            <div class="submit">
+                <button class="payment" type="button" onclick="dataReset()">CANCEL PAYMENT</button>
+                <button class="payment" type="button" onclick="storedata()">PROCEED PAYMENT</button>
+            </div>
+        </div>
+            
+    </section>
+    <footer>
+        <section class="top">
+            <div class="footer_left">
+                <a href="#"><H4>CUSTOMER SERVICE</H4></a>
+                <a href="#">Customer Care Numbers</a><br><br>
+                <a href="#"><h4>Our Initiatives</h4></a>
+                <a href="#" id="safe_banking">Safe Banking</a>
+                <a href="#">Go Green</a>
+            </div>
+            <div class="middle">
+                <a href="#"><h4>Useful Links</h4></a>
+                <a href="#">Get User ID</a>
+                <a href="#"> Ways to Bank</a>
+                <a href="#">Online</a>
+                <a href="#">Banking</a>
+                <a href="#">Service Account</a>
+                <a href="#">PPF</a>
+                <a href="#">Personal Finance Tool</a>
+                <a href="#">Form Center</a>
+                <a href="#">Gold Rate Today</a>
+                <a href="#">Media Gallary</a>
+                <a href="#">Credit Card</a>
+                
+
+            </div>
+            <div class="right">
+                <a href="#"><h4>VISIT OTHER ICICI WEBSITES</h4></a>
+                <a href="#">ICICI Group</a>
+                <a href="#">ICICI Foundation</a>
+                <a href="#">ICICI Lombard General Insurance</a>
+                <a href="#">ICICI Securities</a>
+                <a href="#">ICICI Preduntial Insurance</a>
+                <a href="#">ICICI Preduntial AMC</a>
+                <a href="#">ICICI Venture</a>
+                <a href="#">ICICI Direct</a>
+                <a href="#">DISHA Financial Counselling</a>
+                <a href="#">ICICI Home Finance</a>
+                <a href="#">Erstwhile The Bank of Rajasthan</a>
+                <a href="#">Bahrain</a>
+                <a href="#">Canada</a>
+                <a href="#">Germany</a>
+                <a href="#">Hong Kong</a>
+                <a href="#">Russia</a>
+                <a href="#">Sigapore</a>
+                <a href="#">Srilanka</a>
+                <a href="#">UK</a>
+                <a href="#">US</a>
+                
+            </div>
+
+        </section>
+        <section class="bottom">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Interest Rates </a>
+            <a href="#">Services Charges & fees</a>
+            <a href="#"> Do Not Call Registry</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Multilingual Disclaimer</a>
+            <a href="#"> Code of Commitment</a>
+            <a href="#">Group of Bussiness and Conduct and Ehics</a>
+            <a href="#">Group of Bussiness and Conduct and Ehics</a>
+            <a href="#">Group of Bussiness and Conduct and Ehics</a>
+            <a href="#"> Use of Unparliamentary language by Customers</a>
+            <a href="#">Privacy</a>
+            <a href="#">USA Patrict Certification</a>
+   
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
